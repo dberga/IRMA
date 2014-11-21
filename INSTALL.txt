@@ -1,0 +1,74 @@
+IRMA source code development guidelines:
+
+A.DOWNLOAD & INSTALL MINGW COMPILER 
+
+	1. Download it from:
+	http://sourceforge.net/projects/mingw/files/latest/download?source=files
+
+	2. Execute it and set the install parameter path in "C:\"
+
+	3. Adding windows environment variable
+	3.1. Edit environment variable in Windows, go to "Control panel -> System -> Advanced System Settings -> Environment Variables -> Edit.."
+	3.2. Add the bin path "C:\MinGW\bin" in the environment variable "path" (add means separating with semicolon)
+
+B.DOWNLOAD & INSTALL GNU MAKE
+
+	1. Download it from
+	http://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=kent&download=
+
+	2. Execute it and put the install parameter path in "C:\GnuWin32"
+
+	3.  MAKING GNU MAKE WORK
+	3.1. Edit environment variable in Windows, go to "Control panel -> System -> Advanced System Settings -> Environment Variables -> Edit.."
+	3.2. Add the bin path "C:\GnuWin32\bin" in the environment variable "path" (add means separating with semicolon)
+
+C.DOWNLOAD & BUILD OUR OPENCV LIBRARIES (optional)(*ONLY versions <2.4.6 have mingw libs, other latest versions use visual 10)
+
+	1. Download it from:
+	http://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.4.6/OpenCV-2.4.6.0.exe/download
+
+	2. Execute it and put the extract parameter path in "C:\"
+
+	3. Building OpenCV (optional)
+	3.1. Download and Install CMake from:
+	http://www.cmake.org/files/v2.8/cmake-2.8.12.1-win32-x86.exe
+	3.2. Install it
+	3.3. Execute the CMake (cmake-gui) and:
+	-> Put in [Where is the source code] this path "C:/opencv"
+	-> Put in [Where to build binaries] this path "C:/opencv/build/x86/mingw"
+	-> Press Configure button and wait until finishes
+	-> Press Generate button and wait until finishes
+	-> Open the cmd and go to "C:\opencv\build\x86\mingw" then use the command "mingw32-make" and wait until finishes
+	Now it is built (our binaries won't have libstdc++-6.dll error)
+	3.4. Copy all the ".dll" from "C:\opencv\build\x86\mingw\bin" inside our "bin" folder
+
+	4. Adding windows environment variable
+	4.1.Edit environment variable in Windows, go to "Control panel -> System -> Advanced System Settings -> Environment Variables -> Edit.."
+	4.2.Add the lib path where are your opencv lib files in the environment variable "path" (add means separating with semicolon). For example: "C:\opencv\build\x86\mingw\lib" or "C:\test\lib"
+
+D.DOWNLOAD, INSTALL & CONFIGURE CODE::BLOCKS
+
+	1. Download it from:
+	http://sourceforge.net/projects/codeblocks/files/Binaries/12.11/Windows/codeblocks-12.11-setup.exe/download
+
+	2. Install it with every useful plugin needed
+
+	3. Configure Codeblocks compiler going to "Settings -> Compiler..."
+	3.1. Select [GNU GCC Compiler] on the selection bar
+	3.2. Go to the [Toolchain executables] tab and press [Auto-detect] button or put the "C:\MinGW" path
+
+
+Z.WORKING WITH OUR CODE::BLOCKS PROJECT
+
+   Z1.CREATING THE CODE::BLOCKS PROJECT (optional -> it is already created)
+
+	1. Go to "File->New->Project->Console Application->press Go button-> select C++" and set your project config
+	2. In our workspace, right-click to your project and press "Build options..."
+	2.1. Select [Search directories] tab and [Compiler] subtab, add the opencv include path. For example: "C:\opencv\build\include" or "C:\IRMA\include"
+	2.2. Select [Search directories] tab and [Linker] subtab, add the opencv lib path. For example: "C:\opencv\build\x86\mingw\lib" or "C:\IRMA\lib"
+	2.3. Select [Linker settings] tab and add all your ".a" libraries from your "C:\opencv\build\x86\mingw\lib" folder
+
+   Z2.OPENING THE EXISTING CODE::BLOCKS PROJECT	
+
+	1. Go to "File->Open" tab and select where your project is
+	2. Press Build and Run button to compile and execute your project

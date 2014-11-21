@@ -1,0 +1,14 @@
+The Dynamic link libraries used are:
+
+OpenCV
+-libopencv_calib3d246.dll
+-libopencv_core246.dll
+-libopencv_features2d246.dll
+-libopencv_highui246.dll
+-libopencv_improc246.dll
+
+OpenGL & GLUT
+-opengl32.dll
+-glu32.dll
+-glut32.dll
+

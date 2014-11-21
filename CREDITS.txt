@@ -1,0 +1,11 @@
+IRMA CREDITS
+----
+
+· low-cost-vision : usage of uEye cameras
+https://code.google.com/p/low-cost-vision/
+
+· opencv-srf : shape detection
+http://opencv-srf.blogspot.com.es/2011/09/object-detection-tracking-using-contours.html
+
+· StanEpp : opengl primitives on opencv scenario
+https://github.com/StanEpp/OpenCV_Chessboard

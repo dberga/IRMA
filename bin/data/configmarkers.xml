@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<blobdetector minThreshold="40" maxThreshold="60" thresholdStep="5" minArea="10" maxArea="8000" minConvexity=".4f" maxConvexity="2" minInertiaRatio=".1f" filterByColor="false" filterByCircularity="false" />
+<markerdetector minThreshold="50" maxThreshold="255" mandatoryangles="false" restablishpositions="false" />
+<patterns>
+	<pattern id="0" vertexnum="3" minangle="40" maxangle="80" />
+	<pattern id="1" vertexnum="4" minangle="74" maxangle="101" />
+	<pattern id="2" vertexnum="5" minangle="108" maxangle="114" />
+	<pattern id="3" vertexnum="6" minangle="115" maxangle="140" />
+</patterns>
+<origin found="true" x="5.98854" y="-4.80904" z="57.4367" />

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="IRMA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="dependencies\;IRMA\;dependencies\openCV\;dependencies\uEye\;dependencies\pugi\;IRMA\IRMA\;IRMA\Marker\;IRMA\Camera\;files\;demo\;IRMA\Camera\uEye\;IRMA\Camera\VideoCapture\;dependencies\openGL\;dependencies\boost\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/IRMA" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="C:/opencv/build/include" />
+					<Add directory="C:/boost_1_55_0" />
+				</Compiler>
+				<Linker>
+					<Add library="lib\uEye_api.lib" />
+					<Add library="lib\uEye_api_64.lib" />
+					<Add library="lib\uEye_tools.lib" />
+					<Add library="lib\ueye_tools_64.lib" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts246.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_ml_pch_dephelp.a" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add directory="lib" />
+					<Add directory="C:/opencv/build/x86/mingw/lib" />
+					<Add directory="C:/MinGW/lib" />
+				</Linker>
+			</Target>
+			<Target title="StaticLibrary">
+				<Option output="build/mingw/StaticLibrary/IRMA" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="C:/opencv/build/include" />
+					<Add directory="C:/boost_1_55_0" />
+				</Compiler>
+				<Linker>
+					<Add library="lib\uEye_api.lib" />
+					<Add library="lib\uEye_api_64.lib" />
+					<Add library="lib\uEye_tools.lib" />
+					<Add library="lib\ueye_tools_64.lib" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts246.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_ml_pch_dephelp.a" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add directory="lib" />
+					<Add directory="C:/opencv/build/x86/mingw/lib" />
+					<Add directory="C:/MinGW/lib" />
+				</Linker>
+			</Target>
+			<Target title="DynamicLibrary">
+				<Option output="build/mingw/DynamicLibrary/libIRMA" imp_lib="build/mingw/DynamicLibrary/$(TARGET_OUTPUT_BASENAME).a" def_file="build/mingw/DynamicLibrary/$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="build/mingw/" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="C:/opencv/build/include" />
+					<Add directory="C:/boost_1_55_0" />
+				</Compiler>
+				<Linker>
+					<Add library="lib\uEye_api.lib" />
+					<Add library="lib\uEye_api_64.lib" />
+					<Add library="lib\uEye_tools.lib" />
+					<Add library="lib\ueye_tools_64.lib" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts246.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_ml_pch_dephelp.a" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add directory="lib" />
+					<Add directory="C:/opencv/build/x86/mingw/lib" />
+					<Add directory="C:/MinGW/lib" />
+				</Linker>
+			</Target>
+			<Target title="GUI">
+				<Option output="bin/IRMAGUI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="C:/opencv/build/include" />
+					<Add directory="C:/boost_1_55_0" />
+				</Compiler>
+				<Linker>
+					<Add library="lib\uEye_api.lib" />
+					<Add library="lib\uEye_api_64.lib" />
+					<Add library="lib\uEye_tools.lib" />
+					<Add library="lib\ueye_tools_64.lib" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_calib3d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_features2d246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_highgui246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_imgproc246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_perf_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_calib3d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ml246.dll.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_core_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_features2d_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_highgui_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_imgproc_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts246.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_ts_pch_dephelp.a" />
+					<Add library="C:\opencv\build\x86\mingw\lib\libopencv_test_ml_pch_dephelp.a" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+					<Add library="gdi32" />
+					<Add directory="lib" />
+					<Add directory="C:/opencv/build/x86/mingw/lib" />
+					<Add directory="C:/MinGW/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="bin/data/config.xml">
+			<Option virtualFolder="files/" />
+		</Unit>
+		<Unit filename="bin/data/configcameras.xml">
+			<Option virtualFolder="files/" />
+		</Unit>
+		<Unit filename="bin/data/configmarkers.xml">
+			<Option virtualFolder="files/" />
+		</Unit>
+		<Unit filename="include/Camera.hpp">
+			<Option virtualFolder="IRMA/Camera/" />
+		</Unit>
+		<Unit filename="include/IRMA.hpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="include/Marker.hpp">
+			<Option virtualFolder="IRMA/Marker/" />
+		</Unit>
+		<Unit filename="include/VideoCaptureCamera.hpp">
+			<Option virtualFolder="IRMA/Camera/VideoCapture/" />
+		</Unit>
+		<Unit filename="include/Wrapper.h">
+			<Option virtualFolder="demo/" />
+		</Unit>
+		<Unit filename="include/inc_CV.h">
+			<Option virtualFolder="dependencies/openCV/" />
+		</Unit>
+		<Unit filename="include/inc_Drivers.h">
+			<Option virtualFolder="dependencies/" />
+		</Unit>
+		<Unit filename="include/inc_GL.h">
+			<Option virtualFolder="dependencies/openGL/" />
+		</Unit>
+		<Unit filename="include/inc_boost.h">
+			<Option virtualFolder="dependencies/boost/" />
+		</Unit>
+		<Unit filename="include/parameters.h">
+			<Option virtualFolder="IRMA/" />
+		</Unit>
+		<Unit filename="include/pugiconfig.hpp">
+			<Option virtualFolder="dependencies/pugi/" />
+		</Unit>
+		<Unit filename="include/pugixml.hpp">
+			<Option virtualFolder="dependencies/pugi/" />
+		</Unit>
+		<Unit filename="include/uEye.h">
+			<Option virtualFolder="dependencies/uEye/" />
+		</Unit>
+		<Unit filename="include/uEyeCamera.hpp">
+			<Option virtualFolder="IRMA/Camera/uEye/" />
+		</Unit>
+		<Unit filename="include/uEyeExceptions.h">
+			<Option virtualFolder="IRMA/Camera/uEye/" />
+		</Unit>
+		<Unit filename="src/3DHandler.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/DetectionHandler.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/DrawHandler.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/FileHandler.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/IRMA.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/KeyHandler.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/Marker.cpp">
+			<Option virtualFolder="IRMA/Marker/" />
+		</Unit>
+		<Unit filename="src/VideoCaptureCamera.cpp">
+			<Option virtualFolder="IRMA/Camera/VideoCapture/" />
+		</Unit>
+		<Unit filename="src/VisionHandler.cpp">
+			<Option virtualFolder="IRMA/IRMA/" />
+		</Unit>
+		<Unit filename="src/Wrapper.cpp">
+			<Option virtualFolder="demo/" />
+		</Unit>
+		<Unit filename="src/inc_GL.cpp">
+			<Option virtualFolder="dependencies/openGL/" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="demo/" />
+		</Unit>
+		<Unit filename="src/pugixml.cpp">
+			<Option virtualFolder="dependencies/pugi/" />
+		</Unit>
+		<Unit filename="src/uEyeCamera.cpp">
+			<Option virtualFolder="IRMA/Camera/uEye/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

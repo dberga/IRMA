@@ -5,6 +5,8 @@ IRMA
 * License [here](https://github.com/dberga/IRMA/blob/master/LICENSE)
 * Demo video [here](https://www.youtube.com/watch?v=Y77tmCQwrN4)
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Y77tmCQwrN4/0.jpg)](https://www.youtube.com/watch?v=Y77tmCQwrN4)
+
 ___
 
 InfraRed MArkers Library (IRMA)
